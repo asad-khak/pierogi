@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Український ресторан</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Український ресторан</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#reservation">Бронирование</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#feedback">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="menu">
+        <h2>Наше меню</h2>
+        <ul>
+            <li>Пельмени</li>
+            <li>Вареники</li>
+            <li>Украинский борщ</li>
+            <li>Деревенские блины</li>
+        </ul>
+    </section>
+    
+    <section id="reservation">
+        <h2>Бронирование столиков</h2>
+        <form id="booking-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" required>
+            
+            <label for="date">Дата:</label>
+            <input type="date" id="date" required>
+            
+            <label for="time">Время:</label>
+            <input type="time" id="time" required>
+            
+            <button type="submit">Забронировать</button>
+        </form>
+    </section>
+    
+    <section id="contact">
+        <h2>Контактная информация</h2>
+        <p>Адрес: Киев, ул. Шевченко, 12</p>
+        <p>Телефон: +380 44 123 4567</p>
+        <p>Email: info@ukrainian-restaurant.com</p>
+        <a href="https://www.ubereats.com" target="_blank">Заказать через Uber Eats</a>
+    </section>
+    
+    <section id="feedback">
+        <h2>Обратная связь</h2>
+        <form id="feedback-form">
+            <label for="message">Ваш отзыв:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
